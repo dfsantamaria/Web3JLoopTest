@@ -25,7 +25,7 @@ public class web3jLoopTest
   {
     
       try {
-          String the_service="https://proud-withered-violet.ropsten.quiknode.pro/5698455e8356fba0380b17cb2ee8e08453e66d5b/";
+          String the_service="";
           Web3j web3 = Web3j.build(new HttpService(the_service));
           CompletableFuture<EthGetBalance> balance = web3.ethGetBalance("0x7a7f3F3B111236138FFBEe7F54d0743C4B1cb10F", DefaultBlockParameterName.LATEST).sendAsync(); 
           BigInteger amount =  balance.get().getBalance();
